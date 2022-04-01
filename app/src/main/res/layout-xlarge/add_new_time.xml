@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_time_box"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/pik_time_addusr"
+                        android:layout_width="10dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AM"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PM"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/add_new_medic_time"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/ic_add" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/before_eat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Before eat"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/after_eat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="After eat"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layoutDirection="rtl"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/pill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Pill"
+                        android:textColor="@color/white" />
+
+                    <RadioButton
+                        android:id="@+id/ml"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ml"
+                        android:textColor="@color/white" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="15dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_time_box"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Amount"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

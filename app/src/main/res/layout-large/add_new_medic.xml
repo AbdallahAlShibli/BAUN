@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <EditText
+                android:id="@+id/medicName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/ic_edit_text"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/textView100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="Medicine"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <Button
+                android:id="@+id/addMedic2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/ic_add" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/ex_time1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/time2_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/ex_time2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/time3_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <include
+                        layout="@layout/ex_time3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/date_exp0"
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_edit_text"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="00/00/0000"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <RadioGroup
+                        android:id="@+id/amountRadio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layoutDirection="rtl"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/pill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="Pill"
+                            android:textColor="@color/white" />
+
+                        <RadioButton
+                            android:id="@+id/ml"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ml"
+                            android:textColor="@color/white" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/amount"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/ic_time_box"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Amount"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/note"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/ic_edit_text"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView1314"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="Note"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

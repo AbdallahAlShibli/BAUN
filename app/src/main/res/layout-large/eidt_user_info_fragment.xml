@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_back_blank3"
+    tools:context=".ui.editUser.EidtUserInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/back_to_home"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/back"
+                    android:layout_marginBottom="20dp" />
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button848"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:text="Save" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView100"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="10dp"
+                        android:text="Age"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/userAge"
+                        android:layout_width="60dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_number_box"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#402A70"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/medicTimings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/userName"
+                        android:layout_width="280dp"
+                        android:layout_height="45dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_edit_text_box"
+                        android:ems="10"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="#402A70"
+                        android:textSize="14dp"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/medicineInfoLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/medic_name_in_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp" />
+
+                <include
+                    layout="@layout/med_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

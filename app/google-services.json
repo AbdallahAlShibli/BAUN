@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "649926516288",
+    "project_id": "baun-d5a2c",
+    "storage_bucket": "baun-d5a2c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:649926516288:android:ad1476b0ba17df0ca0c9a5",
+        "android_client_info": {
+          "package_name": "tech.abdullah.baun"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "649926516288-chan62i657lkgtee0q0o3qjt9gjc665m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tech.abdullah.baun",
+            "certificate_hash": "b29094a433cb4475c816ed66bbe61844727299bf"
+          }
+        },
+        {
+          "client_id": "649926516288-kukpnlc9ejg9c4fb5kjdgc7vlcd64med.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsZMNQUa1SwUiq0LOPvKWaIDL2NUJexdw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "649926516288-kukpnlc9ejg9c4fb5kjdgc7vlcd64med.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

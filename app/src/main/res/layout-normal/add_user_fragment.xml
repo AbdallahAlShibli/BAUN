@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.addUser.AddUserFragment">
+
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="@android:style/Widget.Material.ProgressBar.Large"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/scrollView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollView2"
+        tools:ignore="MissingConstraints,NewApi" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/din_next_lt_arabic_medium_2"
+                android:gravity="center"
+                android:text="Add new user"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
+
+
+            <LinearLayout
+                android:id="@+id/addNewExtraUserLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ExuserName"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_edit_text"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView101"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Name"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ExuserAge"
+                        android:layout_width="240dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_edit_text"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/textView1001"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="Age"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <!--                <Button-->
+                <!--                    android:id="@+id/addExUser"-->
+                <!--                    android:layout_width="130dp"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:layout_marginLeft="30dp"-->
+                <!--                    android:layout_marginTop="20dp"-->
+                <!--                    android:layout_marginRight="30dp"-->
+                <!--                    android:background="@drawable/roundedbutton"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="Add user"-->
+                <!--                    android:textColor="@color/white" />-->
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/infolayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/add_new_medic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/infolayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/add_new_medic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/infolayout3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <include
+                    layout="@layout/add_new_medic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/add_user_data"
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ic_edit_text_box"
+                android:text="Save Data" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
